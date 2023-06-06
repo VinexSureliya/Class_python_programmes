@@ -3,8 +3,8 @@ try:
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
-        database="python"
+        password='',
+        database='python'
     )
     mycursor = mydb.cursor()
     mycursor.execute("insert into tbl1 values(4,'viraj','junagadh')")
